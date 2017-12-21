@@ -1,0 +1,300 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr User 5906 4724
+encoding utf-8
+Sheet 1 1
+Title "KY-038 Microphone sound sensor module"
+Date ""
+Rev "0.1"
+Comp "schema: ZB45 Makerspace"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x04 J?
+U 1 1 5A2ECFF1
+P 850 1700
+F 0 "J?" H 850 1900 50  0000 C CNN
+F 1 "Pinconnector" H 850 1400 50  0000 C CNN
+F 2 "" H 850 1700 50  0001 C CNN
+F 3 "" H 850 1700 50  0001 C CNN
+	1    850  1700
+	-1   0    0    -1  
+$EndComp
+Text Label 1250 1600 2    60   ~ 0
+A0
+Text Label 1250 1700 2    60   ~ 0
+G
+Text Label 1250 1800 2    60   ~ 0
++
+Text Label 1250 1900 2    60   ~ 0
+D0
+Text Label 1800 3000 1    60   ~ 0
+G
+$Comp
+L Microphone_Condenser MK?
+U 1 1 5A2F043F
+P 1650 2300
+F 0 "MK?" H 1520 2350 50  0000 R CNN
+F 1 "Microphone_Condenser" H 1520 2275 50  0000 R CNN
+F 2 "" V 1650 2400 50  0001 C CNN
+F 3 "" V 1650 2400 50  0001 C CNN
+	1    1650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A2F04D9
+P 1650 1900
+F 0 "R3" V 1730 1900 50  0000 C CNN
+F 1 "150R" V 1650 1900 50  0000 C CNN
+F 2 "" V 1580 1900 50  0001 C CNN
+F 3 "" H 1650 1900 50  0001 C CNN
+	1    1650 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM393 U?
+U 1 1 5A2F0624
+P 2300 1700
+F 0 "U?" H 2450 1850 50  0000 C CNN
+F 1 "LM393" H 2550 1550 50  0000 C CNN
+F 2 "" H 2300 1700 50  0001 C CNN
+F 3 "" H 2300 1700 50  0001 C CNN
+	1    2300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT_TRIM RV1
+U 1 1 5A2F073C
+P 1650 1350
+F 0 "RV1" V 1475 1350 50  0000 C CNN
+F 1 "100K" V 1550 1350 50  0000 C CNN
+F 2 "" H 1650 1350 50  0001 C CNN
+F 3 "" H 1650 1350 50  0001 C CNN
+	1    1650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A2F09FD
+P 2650 1300
+F 0 "R1" V 2730 1300 50  0000 C CNN
+F 1 "10K" V 2650 1300 50  0000 C CNN
+F 2 "" V 2580 1300 50  0001 C CNN
+F 3 "" H 2650 1300 50  0001 C CNN
+	1    2650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM393 U?
+U 2 1 5A2F0BC6
+P 3400 1700
+F 0 "U?" H 3550 1850 50  0000 C CNN
+F 1 "LM393" H 3650 1550 50  0000 C CNN
+F 2 "" H 3400 1700 50  0001 C CNN
+F 3 "" H 3400 1700 50  0001 C CNN
+	2    3400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A2F0E3F
+P 2450 2300
+F 0 "R2" V 2530 2300 50  0000 C CNN
+F 1 "100K" V 2450 2300 50  0000 C CNN
+F 2 "" V 2380 2300 50  0001 C CNN
+F 3 "" H 2450 2300 50  0001 C CNN
+	1    2450 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A2F12F2
+P 3950 1700
+F 0 "R4" V 4030 1700 50  0000 C CNN
+F 1 "1K" V 3950 1700 50  0000 C CNN
+F 2 "" V 3880 1700 50  0001 C CNN
+F 3 "" H 3950 1700 50  0001 C CNN
+	1    3950 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED L2
+U 1 1 5A2F1539
+P 4350 1700
+F 0 "L2" H 4350 1800 50  0000 C CNN
+F 1 "LED" H 4350 1600 50  0000 C CNN
+F 2 "" H 4350 1700 50  0001 C CNN
+F 3 "" H 4350 1700 50  0001 C CNN
+	1    4350 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 5A2F181F
+P 4000 2100
+F 0 "R6" V 4080 2100 50  0000 C CNN
+F 1 "100K" V 4000 2100 50  0000 C CNN
+F 2 "" V 3930 2100 50  0001 C CNN
+F 3 "" H 4000 2100 50  0001 C CNN
+	1    4000 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED L1
+U 1 1 5A2F2790
+P 4800 1450
+F 0 "L1" H 4800 1550 50  0000 C CNN
+F 1 "LED" H 4800 1350 50  0000 C CNN
+F 2 "" H 4800 1450 50  0001 C CNN
+F 3 "" H 4800 1450 50  0001 C CNN
+	1    4800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5A2F284C
+P 4800 2000
+F 0 "R5" V 4880 2000 50  0000 C CNN
+F 1 "1K" V 4800 2000 50  0000 C CNN
+F 2 "" V 4730 2000 50  0001 C CNN
+F 3 "" H 4800 2000 50  0001 C CNN
+	1    4800 2000
+	1    0    0    -1  
+$EndComp
+Text Label 1450 1050 0    60   ~ 0
++
+Text Label 1450 1700 0    60   ~ 0
+A0
+Text Label 1450 2550 0    60   ~ 0
+G
+Text Label 2850 1700 2    60   ~ 0
+D0
+Wire Wire Line
+	1050 1600 1250 1600
+Wire Wire Line
+	1450 1050 4800 1050
+Wire Wire Line
+	2200 1050 2200 1400
+Wire Wire Line
+	2650 1050 2650 1150
+Connection ~ 2200 1050
+Wire Wire Line
+	2600 1700 2850 1700
+Wire Wire Line
+	2000 1600 1900 1600
+Wire Wire Line
+	1900 1600 1900 2100
+Wire Wire Line
+	1900 2100 3850 2100
+Wire Wire Line
+	3000 2100 3000 1600
+Wire Wire Line
+	3000 1600 3100 1600
+Wire Wire Line
+	2450 2150 2450 2100
+Connection ~ 2450 2100
+Wire Wire Line
+	1650 2500 1650 2550
+Wire Wire Line
+	1450 2550 4800 2550
+Wire Wire Line
+	3300 2550 3300 2000
+Wire Wire Line
+	2450 2450 2450 2550
+Connection ~ 2450 2550
+Wire Wire Line
+	1800 1800 2000 1800
+Wire Wire Line
+	2650 1800 3100 1800
+Wire Wire Line
+	3300 1050 3300 1400
+Connection ~ 2650 1050
+Wire Wire Line
+	3700 1700 3800 1700
+Wire Wire Line
+	4100 1700 4200 1700
+Wire Wire Line
+	4600 1050 4600 2100
+Connection ~ 3300 1050
+Connection ~ 4600 1700
+Connection ~ 3000 2100
+Wire Wire Line
+	4600 1700 4500 1700
+Wire Wire Line
+	4600 2100 4150 2100
+Wire Wire Line
+	4800 1600 4800 1850
+Wire Wire Line
+	4800 1050 4800 1300
+Connection ~ 4600 1050
+Wire Wire Line
+	4800 2550 4800 2150
+Connection ~ 3300 2550
+Connection ~ 2650 1700
+Wire Wire Line
+	1050 1700 1250 1700
+Wire Wire Line
+	1050 1800 1250 1800
+Wire Wire Line
+	2200 2000 2200 2550
+Connection ~ 2200 2550
+Wire Wire Line
+	1650 2050 1650 2100
+Wire Wire Line
+	1800 1700 1800 1800
+Wire Wire Line
+	1450 1700 1800 1700
+Connection ~ 1650 1700
+Wire Wire Line
+	2650 1450 2650 1800
+Wire Wire Line
+	1050 1900 1250 1900
+Wire Wire Line
+	1650 1200 1650 1050
+Connection ~ 1650 1050
+Wire Wire Line
+	1800 1350 1850 1350
+Wire Wire Line
+	1850 1350 1850 1050
+Connection ~ 1850 1050
+Wire Wire Line
+	1650 1500 1650 1750
+Connection ~ 1650 2550
+$EndSCHEMATC
